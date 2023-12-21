@@ -1,5 +1,5 @@
 {
-  "name": "my-midway-project",
+  "name": "ez-admin-midway",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -43,8 +43,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/armory-tools/ez-admin-midway"
   },
-  "author": "anonymous",
+  "author": "arronf2e",
   "license": "MIT"
 }
