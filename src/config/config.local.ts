@@ -36,4 +36,19 @@ export default {
       host: process.env.REDIS_HOST || '127.0.0.1', // Redis host
     },
   },
+  swagger: {
+    title: 'ez-admin-midway',
+    description: 'ez-admin for midwayjs api',
+    version: '0.0.1',
+    termsOfService: '',
+    contact: {
+      name: 'API Support',
+      url: 'http://github.com/arronf2e',
+      email: 'arronf2e@163.com',
+    },
+    license: {
+      name: 'MIT',
+      url: 'https://www.apache.org/licenses/LICENSE-2.0.html',
+    },
+  },
 } as MidwayConfig;
