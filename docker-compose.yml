@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+  mysql:
+    restart: always
+    image: mariadb:10.3
+    container_name: ez-admin-midway-mysql
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./store/:/var/lib/mysql
+    mem_limit: 512m
+    networks:
+      - mysqlnetwork
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=ez-admin-midwayjs
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password123
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+volumes:
+  mysql:
+    driver: local
+
+networks:
+  mysqlnetwork:
+    driver: bridge
