@@ -6,7 +6,7 @@ import {
   IsNumberString,
   Length,
 } from 'class-validator';
-import { PageGetDto } from '../../../share/dto';
+import { PageGetDto } from '../../share/dto/base.dto';
 
 export class DeleteTypeDto {
   @IsInt()
