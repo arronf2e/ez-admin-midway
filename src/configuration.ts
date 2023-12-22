@@ -8,6 +8,7 @@ import * as orm from '@midwayjs/typeorm';
 import * as redis from '@midwayjs/redis';
 import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
+import { ExecptionMiddleware } from './middleware/execption.middleware';
 
 dotenv.config();
 
@@ -31,6 +32,6 @@ export class MainConfiguration {
 
   async onReady() {
     // add middleware
-    this.app.useMiddleware([ReportMiddleware]);
+    this.app.useMiddleware([ReportMiddleware, ExecptionMiddleware]);
   }
 }
