@@ -22,8 +22,24 @@ services:
       - PMA_PORT=3306
       - PMA_USER=root
       - PMA_PASSWORD=root
+  redis-server:
+    restart: always
+    image: redis:4.0
+    container_name: ez-admin-midway-redis
+    command: /bin/bash -c 'redis-server --appendonly yes'
+    sysctls:
+      - net.core.somaxconn=65535
+    ports:
+      - "6397:6379"
+    volumes:
+      - ./redis:/data
+    mem_limit: 96m
+    networks:
+      - mysqlnetwork
 volumes:
   mysql:
+    driver: local
+  redis:
     driver: local
 
 networks:

@@ -5,6 +5,7 @@ import * as info from '@midwayjs/info';
 import * as swagger from '@midwayjs/swagger';
 import * as dotenv from 'dotenv';
 import * as orm from '@midwayjs/typeorm';
+import * as redis from '@midwayjs/redis';
 import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
 
@@ -16,6 +17,7 @@ dotenv.config();
     validate,
     swagger,
     orm,
+    redis,
     {
       component: info,
       enabledEnvironment: ['local'],
