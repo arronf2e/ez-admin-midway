@@ -23,12 +23,18 @@ dependencies:
   '@midwayjs/logger':
     specifier: ^2.14.0
     version: 2.19.3
+  '@midwayjs/swagger':
+    specifier: '3'
+    version: 3.13.7
   '@midwayjs/typeorm':
     specifier: '3'
     version: 3.13.7
   '@midwayjs/validate':
     specifier: ^3.12.0
     version: 3.13.7
+  swagger-ui-dist:
+    specifier: ^5.10.5
+    version: 5.10.5
   typeorm:
     specifier: ^0.3.17
     version: 0.3.17
@@ -1040,6 +1046,10 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@midwayjs/cookies': 1.0.5
+    dev: false
+
+  /@midwayjs/swagger@3.13.7:
+    resolution: {integrity: sha512-RlL0OW0hokpH4A7HHXrHwpSxkhP32fElKVuyxeowUHDI8pEhb2Fflh5N+SiCnc7M4Zp8M1hWIlOFeNY4qLzbYA==}
     dev: false
 
   /@midwayjs/typeorm@3.13.7:
@@ -4978,6 +4988,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /swagger-ui-dist@5.10.5:
+    resolution: {integrity: sha512-Uv8E7hV/nXALQKgW86X1i58gl1O6DFg+Uq54sDwhYqucBBxj/47dLNw872TNILNlOTuPA6dRvUMGQdmlpaX8qQ==}
+    dev: false
 
   /table@6.8.1:
     resolution: {integrity: sha512-Y4X9zqrCftUhMeH2EptSSERdVKt/nEdijTOacGD/97EKjhQ/Qs8RTlEGABSJNNN8lac9kheH+af7yAkEWlgneA==}

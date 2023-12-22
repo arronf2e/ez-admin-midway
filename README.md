@@ -14,6 +14,12 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
+### api docs
+
+```bash
+open http://localhost:7001/swagger-ui/index.html
+```
+
 ### Deploy
 
 ```bash
