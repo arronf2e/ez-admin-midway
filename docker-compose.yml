@@ -16,7 +16,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=ez-admin-midwayjs
       - MYSQL_USER=root
-      - MYSQL_PASSWORD=password123
+      - MYSQL_PASSWORD=root
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql
       - PMA_PORT=3306
