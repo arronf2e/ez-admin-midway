@@ -8,6 +8,8 @@ import * as orm from '@midwayjs/typeorm';
 import * as redis from '@midwayjs/redis';
 import * as bull from '@midwayjs/bull';
 import * as bullBoard from '@midwayjs/bull-board';
+import * as jwt from '@midwayjs/jwt';
+import * as passport from '@midwayjs/passport';
 import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
 import { ExecptionMiddleware } from './middleware/execption.middleware';
@@ -23,6 +25,8 @@ dotenv.config();
     redis,
     bull,
     bullBoard,
+    jwt,
+    passport,
     {
       component: info,
       enabledEnvironment: ['local'],

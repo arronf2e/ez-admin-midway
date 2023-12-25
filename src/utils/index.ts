@@ -14,7 +14,7 @@ export class Utils {
   /**
    * 获取请求IP
    */
-  getReqIp(ctx: Context) {
+  getReqIP(ctx: Context) {
     const req: any = ctx.req;
     return (
       req.headers['x-forwarded-for'] || // 判断是否有反向代理 IP
@@ -36,6 +36,13 @@ export class Utils {
    */
   aesEncrypt(msg: string, secret: string) {
     return CryptoJS.AES.encrypt(msg, secret).toString();
+  }
+
+  /**
+   * AES解密
+   */
+  aesDecrypt(encrypted: string, secret: string): string {
+    return CryptoJS.AES.decrypt(encrypted, secret).toString(CryptoJS.enc.Utf8);
   }
 
   /**
