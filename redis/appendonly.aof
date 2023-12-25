@@ -55133,3 +55133,4147 @@ $13
 1703496556209
 $5
 30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496586210
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496616211
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496676211
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496736213
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496796213
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496856214
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496886215
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496946215
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703496976216
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497006216
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497066232
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497096233
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497126234
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497200126
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551999856,"timestamp":1703497200144,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497200144
+$9
+551999856
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+7e5efa4f-d203-441a-b358-e2b237da29bd
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551999846,"timestamp":1703497200154,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497200154
+$9
+551999846
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+7e5efa4f-d203-441a-b358-e2b237da29bd
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551999843,"timestamp":1703497200157,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497200157
+$9
+551999843
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+7e5efa4f-d203-441a-b358-e2b237da29bd
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551988184,"timestamp":1703497211816,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497211816
+$9
+551988184
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+a72e7d51-5f3f-4e17-baf4-a60f5d781be8
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551988175,"timestamp":1703497211825,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497211825
+$9
+551988175
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+a72e7d51-5f3f-4e17-baf4-a60f5d781be8
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551988174,"timestamp":1703497211826,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497211826
+$9
+551988174
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+a72e7d51-5f3f-4e17-baf4-a60f5d781be8
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497237970
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551962014,"timestamp":1703497237986,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497237986
+$9
+551962014
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33ad93e7-7e3f-431d-b0d8-37ce2f052127
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551962011,"timestamp":1703497237989,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497237989
+$9
+551962011
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33ad93e7-7e3f-431d-b0d8-37ce2f052127
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551962003,"timestamp":1703497237997,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497237997
+$9
+551962003
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33ad93e7-7e3f-431d-b0d8-37ce2f052127
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497267988
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497297989
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497327991
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497357992
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497387993
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497447996
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497477997
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497510380
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551689604,"timestamp":1703497510396,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497510396
+$9
+551689604
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+bf4e7e60-c117-4280-8aef-07f8eae19913
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551689602,"timestamp":1703497510398,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497510398
+$9
+551689602
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+bf4e7e60-c117-4280-8aef-07f8eae19913
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551689601,"timestamp":1703497510399,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497510399
+$9
+551689601
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+bf4e7e60-c117-4280-8aef-07f8eae19913
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551662318,"timestamp":1703497537682,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497537682
+$9
+551662318
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+23df7091-9b53-428f-8d77-8feac48a517a
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551662315,"timestamp":1703497537685,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497537685
+$9
+551662315
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+23df7091-9b53-428f-8d77-8feac48a517a
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551662302,"timestamp":1703497537698,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497537698
+$9
+551662302
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+23df7091-9b53-428f-8d77-8feac48a517a
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497567662
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497610034
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551589927,"timestamp":1703497610073,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497610073
+$9
+551589927
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33b393b4-6ebc-40a3-9f62-7c4eb9736d9b
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551589914,"timestamp":1703497610086,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497610086
+$9
+551589914
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33b393b4-6ebc-40a3-9f62-7c4eb9736d9b
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551589908,"timestamp":1703497610092,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497610092
+$9
+551589908
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+33b393b4-6ebc-40a3-9f62-7c4eb9736d9b
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497640049
+$5
+30000
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497689323
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551510663,"timestamp":1703497689337,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497689337
+$9
+551510663
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+b209814f-f7ee-479d-bf68-08923ae422c3
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551510657,"timestamp":1703497689343,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497689343
+$9
+551510657
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+b209814f-f7ee-479d-bf68-08923ae422c3
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551510653,"timestamp":1703497689347,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497689347
+$9
+551510653
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+b209814f-f7ee-479d-bf68-08923ae422c3
+*2
+$3
+DEL
+$37
+admin:task:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$30
+admin:task:SysTaskQueue:repeat
+$31
+admin:task:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$24
+admin:task:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$31
+admin:task:SysTaskQueue:stalled
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:active
+$30
+admin:task:SysTaskQueue:failed
+$37
+admin:task:SysTaskQueue:stalled-check
+$35
+admin:task:SysTaskQueue:meta-paused
+$30
+admin:task:SysTaskQueue:paused
+$1
+1
+$24
+admin:task:SysTaskQueue:
+$13
+1703497767935
+$5
+30000
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$58
+{"id":1,"service":"adminSysReqLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":551432049,"timestamp":1703497767951,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497767951
+$9
+551432049
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fe9edecb-1f15-4893-b8f7-91087c20902c
+*4
+$4
+zadd
+$30
+admin:task:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$60
+{"id":2,"service":"adminSysLoginLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":551432045,"timestamp":1703497767955,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497767955
+$9
+551432045
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fe9edecb-1f15-4893-b8f7-91087c20902c
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$28
+admin:task:SysTaskQueue:wait
+$30
+admin:task:SysTaskQueue:paused
+$35
+admin:task:SysTaskQueue:meta-paused
+$26
+admin:task:SysTaskQueue:id
+$31
+admin:task:SysTaskQueue:delayed
+$32
+admin:task:SysTaskQueue:priority
+$24
+admin:task:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$59
+{"id":3,"service":"adminSysTaskLogService.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":551432041,"timestamp":1703497767959,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703497767959
+$9
+551432041
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fe9edecb-1f15-4893-b8f7-91087c20902c

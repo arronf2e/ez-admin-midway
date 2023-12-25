@@ -11,6 +11,7 @@ import { UpdatePersonInfoDto } from '../../verify';
 import { isEmpty } from 'lodash';
 import { CreateUserDto, UpdateUserDto } from './user.dto';
 import { IPageSearchUserResult } from '../../interface';
+import { UpdatePasswordDto } from '../../verity.dto';
 
 @Provide()
 export class AdminSysUserService extends BaseService {
@@ -85,6 +86,31 @@ export class AdminSysUserService extends BaseService {
       obj.password = savePassword;
     }
     await this.user.update(uid, obj);
+    return true;
+  }
+
+  /**
+   * 更改管理员密码
+   */
+  async updatePassword(uid: number, dto: UpdatePasswordDto): Promise<boolean> {
+    const user = await this.user.findOne({
+      where: {
+        id: uid,
+      },
+    });
+    if (isEmpty(user)) {
+      throw new Error('update password user is not exist');
+    }
+    const comparePassword = this.utils.md5(
+      `${dto.originPassword}${user.psalt}`
+    );
+    // 原密码不一致，不允许更改
+    if (user.password !== comparePassword) {
+      return false;
+    }
+    const password = this.utils.md5(`${dto.newPassword}${user.psalt}`);
+    await this.user.update({ id: uid }, { password });
+    await this.upgradePasswordV(user.id);
     return true;
   }
 
