@@ -71,25 +71,11 @@ export class AdminSysUserService extends BaseService {
           id: uid,
         },
       });
-      const decodePassword = this.utils.aesDecrypt(
-        user!.password,
-        this.aesSecret.admin
-      );
-      const decodeOriginPassword = this.utils.aesDecrypt(
-        originPassword,
-        this.aesSecret.front
-      );
-      const decodeNewPassword = this.utils.aesDecrypt(
-        newPassword,
-        this.aesSecret.front
-      );
-      if (decodePassword === decodeOriginPassword) {
-        // 旧密码不一致
-        savePassword = this.utils.aesEncrypt(
-          decodeNewPassword,
-          this.aesSecret.admin
-        );
+      const comparePassword = this.utils.md5(`${originPassword}${user.psalt}`);
+      if (user!.password === comparePassword) {
+        savePassword = this.utils.md5(`${newPassword}${user.psalt}`);
       } else {
+        // 旧密码不一致
         return false;
       }
     }
@@ -118,7 +104,8 @@ export class AdminSysUserService extends BaseService {
     // 所有用户初始密码为123456
     const dataSource = this.getManager();
     await dataSource.transaction(async manager => {
-      const password = this.utils.aesEncrypt('123456', this.aesSecret.admin);
+      const salt = this.utils.generateRandomValue(32);
+      const password = this.utils.md5(`123456:${salt}`);
       const u = manager.create(SysUser, {
         departmentId: param.departmentId,
         username: param.username,
@@ -129,6 +116,7 @@ export class AdminSysUserService extends BaseService {
         phone: param.phone,
         remark: param.remark,
         status: param.status,
+        psalt: salt,
       });
       const result = await manager.save(u);
       const { roles } = param;

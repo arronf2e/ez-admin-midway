@@ -10,7 +10,11 @@ import { AdminSysLoginLogService } from './sys/log/service/login_log.service';
 import { AdminSysUserService } from './sys/user/user.service';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import SysUser from './sys/user/entity/user.entity';
-import { IImageCaptchaOptions, IImageCaptchaResult, IPermMenuResult } from './interface';
+import {
+  IImageCaptchaOptions,
+  IImageCaptchaResult,
+  IPermMenuResult,
+} from './interface';
 
 @Provide()
 export class AdminVerifyService extends BaseService {
@@ -99,10 +103,8 @@ export class AdminVerifyService extends BaseService {
     if (isEmpty(user)) {
       return null;
     }
-    if (
-      this.utils.aesDecrypt(user!.password, this.aesSecret.admin) !==
-      decodePassword
-    ) {
+    const comparePassword = this.utils.md5(`${password}${user!.psalt}`);
+    if (user!.password !== comparePassword) {
       return null;
     }
     const perms = await this.adminSysMenuService.getPerms(user!.id);

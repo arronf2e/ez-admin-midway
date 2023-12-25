@@ -4,6 +4,42 @@ import * as CryptoJS from 'crypto-js';
 import * as JsonWebToken from 'jsonwebtoken';
 import { customAlphabet, nanoid } from 'nanoid';
 import ErrorConstants from '../constant/error_constants';
+import { ResOp } from '../interface';
+
+export function res(op?: ResOp): ResOp {
+  return {
+    data: op?.data ?? null,
+    code: op?.code ?? 200,
+    message: op?.code
+      ? getErrorMessageByCode(op!.code) || op?.message || 'unknown error'
+      : op?.message || 'success',
+  };
+}
+
+export function resByPage<V>(
+  list: V,
+  total: number,
+  page: number,
+  size: number
+): ResOp {
+  return res({
+    data: {
+      list,
+      pagination: {
+        total,
+        page,
+        size,
+      },
+    },
+  });
+}
+
+/**
+ * 根据code获取错误信息
+ */
+export function getErrorMessageByCode(code: number): string {
+  return ErrorConstants[code];
+}
 
 @Provide()
 @Scope(ScopeEnum.Singleton)
@@ -22,13 +58,6 @@ export class Utils {
       req.socket.remoteAddress || // 判断后端的 socket 的 IP
       req.connection.socket.remoteAddress
     ).replace('::ffff:', '');
-  }
-
-  /**
-   * 根据code获取错误信息
-   */
-  getErrorMessageByCode(code: number) {
-    return ErrorConstants[code];
   }
 
   /**
@@ -64,7 +93,7 @@ export class Utils {
    */
   generateRandomValue(
     length: number,
-    placeholder = '1234567890qwertyuiopasdfghjklzxcvbnm'
+    placeholder = '1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
   ) {
     const nanoid = customAlphabet(placeholder, length);
     return nanoid();

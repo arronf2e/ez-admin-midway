@@ -41885,3 +41885,4059 @@ $5
 LPUSH
 $36
 316f854a-3472-45bf-842b-709c8597de8d
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491208483
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491238484
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491298486
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491328486
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$4
+EVAL
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491371911
+$5
+30000
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557828072,"timestamp":1703491371928,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491371928
+$9
+557828072
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+cf661abf-7325-475d-a9d0-840ec7f3bbc0
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557828071,"timestamp":1703491371929,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491371929
+$9
+557828071
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+cf661abf-7325-475d-a9d0-840ec7f3bbc0
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557828065,"timestamp":1703491371935,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491371935
+$9
+557828065
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+cf661abf-7325-475d-a9d0-840ec7f3bbc0
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491401916
+$5
+30000
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557783112,"timestamp":1703491416888,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491416888
+$9
+557783112
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fc2b6402-f0fc-43eb-b2f3-581466897548
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557783104,"timestamp":1703491416896,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491416896
+$9
+557783104
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fc2b6402-f0fc-43eb-b2f3-581466897548
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557783103,"timestamp":1703491416897,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491416897
+$9
+557783103
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+fc2b6402-f0fc-43eb-b2f3-581466897548
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491463596
+$5
+30000
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557736383,"timestamp":1703491463617,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491463617
+$9
+557736383
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+4d732cdd-0874-424e-bb8b-d1064cd515fa
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557736374,"timestamp":1703491463626,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491463626
+$9
+557736374
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+4d732cdd-0874-424e-bb8b-d1064cd515fa
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557736368,"timestamp":1703491463632,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491463632
+$9
+557736368
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+4d732cdd-0874-424e-bb8b-d1064cd515fa
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491493599
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491547272
+$5
+30000
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557652690,"timestamp":1703491547310,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491547310
+$9
+557652690
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+f69d9c2e-2b98-45ac-9e2d-1900b241fda9
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557652687,"timestamp":1703491547313,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491547313
+$9
+557652687
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+f69d9c2e-2b98-45ac-9e2d-1900b241fda9
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557652687,"timestamp":1703491547313,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491547313
+$9
+557652687
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+f69d9c2e-2b98-45ac-9e2d-1900b241fda9
+*3
+$3
+set
+$39
+admin:captcha:img:8HMi1KJfFQS9dRM8rEgGT
+$4
+gOfC
+*3
+$9
+PEXPIREAT
+$39
+admin:captcha:img:8HMi1KJfFQS9dRM8rEgGT
+$13
+1703492155286
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*14
+$4
+eval
+$2640
+--[[
+  Move stalled jobs to wait.
+
+    Input:
+      KEYS[1] 'stalled' (SET)
+      KEYS[2] 'wait',   (LIST)
+      KEYS[3] 'active', (LIST)
+      KEYS[4] 'failed', (ZSET)
+      KEYS[5] 'stalled-check', (KEY)
+
+      KEYS[6] 'meta-paused', (KEY)
+      KEYS[7] 'paused', (LIST)
+
+      ARGV[1]  Max stalled job count
+      ARGV[2]  queue.toKey('')
+      ARGV[3]  timestamp
+      ARGV[4]  max check time
+
+    Events:
+      'stalled' with stalled job id.
+]]
+
+local rcall = redis.call
+
+local function batches(n, batchSize)
+  local i = 0
+
+  return function()
+    local from = i * batchSize + 1
+    i = i + 1
+    if (from <= n) then
+      local to = math.min(from + batchSize - 1, n)
+      return from, to
+    end
+  end
+end
+
+-- Check if we need to check for stalled jobs now.
+if rcall("EXISTS", KEYS[5]) == 1 then
+  return {{}, {}}
+end
+
+rcall("SET", KEYS[5], ARGV[3], "PX", ARGV[4])
+
+-- Move all stalled jobs to wait
+local stalling = rcall('SMEMBERS', KEYS[1])
+local stalled = {}
+local failed = {}
+if(#stalling > 0) then
+
+  local dst
+  -- wait or paused destination
+  if rcall("EXISTS", KEYS[6]) ~= 1 then
+    dst = KEYS[2]
+  else
+    dst = KEYS[7]
+  end
+
+  rcall('DEL', KEYS[1])
+
+  local MAX_STALLED_JOB_COUNT = tonumber(ARGV[1])
+
+  -- Remove from active list
+  for i, jobId in ipairs(stalling) do
+    local jobKey = ARGV[2] .. jobId
+
+    -- Check that the lock is also missing, then we can handle this job as really stalled.
+    if(rcall("EXISTS", jobKey .. ":lock") == 0) then
+      --  Remove from the active queue.
+      local removed = rcall("LREM", KEYS[3], 1, jobId)
+
+      if(removed > 0) then
+        -- If this job has been stalled too many times, such as if it crashes the worker, then fail it.
+        local stalledCount = rcall("HINCRBY", jobKey, "stalledCounter", 1)
+        if(stalledCount > MAX_STALLED_JOB_COUNT) then
+          rcall("ZADD", KEYS[4], ARGV[3], jobId)
+          rcall("HSET", jobKey, "failedReason", "job stalled more than allowable limit")
+          rcall("PUBLISH", KEYS[4],  "{\"jobId\":\"" .. jobId .. "\", \"val\": \"job stalled more than maxStalledCount\"}")
+          table.insert(failed, jobId)
+        else
+          -- Move the job back to the wait queue, to immediately be picked up by a waiting worker.
+          rcall("RPUSH", dst, jobId)
+          rcall('PUBLISH', KEYS[1] .. '@', jobId)
+          table.insert(stalled, jobId)
+        end
+      end
+    end
+  end
+end
+
+-- Mark potentially stalled jobs
+local active = rcall('LRANGE', KEYS[3], 0, -1)
+
+if (#active > 0) then
+  for from, to in batches(#active, 7000) do
+    rcall('SADD', KEYS[1], unpack(active, from, to))
+  end
+end
+
+return {failed, stalled}
+
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491578508
+$5
+30000
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557621476,"timestamp":1703491578524,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491578524
+$9
+557621476
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+9aeb14b2-e383-4743-b1e7-a478e995709a
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557621468,"timestamp":1703491578532,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491578532
+$9
+557621468
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+9aeb14b2-e383-4743-b1e7-a478e995709a
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557621463,"timestamp":1703491578537,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491578537
+$9
+557621463
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+9aeb14b2-e383-4743-b1e7-a478e995709a
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491608513
+$5
+30000
+*8
+$4
+eval
+$474
+
+--[[
+  Removes a repeatable job
+  Input:
+    KEYS[1] repeat jobs key
+    KEYS[2] delayed jobs key
+
+    ARGV[1] repeat job id
+    ARGV[2] repeat job key
+    ARGV[3] queue key
+]]
+local millis = redis.call("ZSCORE", KEYS[1], ARGV[2])
+
+if(millis) then
+  -- Delete next programmed job.
+  local repeatJobId = ARGV[1] .. millis
+  if(redis.call("ZREM", KEYS[2], repeatJobId) == 1) then
+    redis.call("DEL", ARGV[3] .. repeatJobId)
+  end
+end
+
+redis.call("ZREM", KEYS[1], ARGV[2]);
+
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:0068ebd51ddb03ae50941a0741c5daf7:
+$27
+__default__:3:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:53195811d8e220355591cc006579b8e1:
+$27
+__default__:2:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*8
+$7
+evalsha
+$40
+4c65f1e9f1d304006a37cd2fb97903d30efcec82
+$1
+2
+$33
+{midway-bull}:SysTaskQueue:repeat
+$34
+{midway-bull}:SysTaskQueue:delayed
+$40
+repeat:77cd4606b498d541f1b188997acfefe7:
+$27
+__default__:1:::0 0 3 ? * 1
+$27
+{midway-bull}:SysTaskQueue:
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:1:::0 0 3 ? * 1
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:2:::0 0 3 ? * 1
+*20
+$4
+eval
+$2695
+--[[
+  Adds a job to the queue by doing the following:
+    - Increases the job counter if needed.
+    - Creates a new job key with the job data.
+
+    - if delayed:
+      - computes timestamp.
+      - adds to delayed zset.
+      - Emits a global event 'delayed' if the job is delayed.
+    - if not delayed
+      - Adds the jobId to the wait/paused list in one of three ways:
+         - LIFO
+         - FIFO
+         - prioritized.
+      - Adds the job to the "added" list so that workers gets notified.
+
+    Input:
+      KEYS[1] 'wait',
+      KEYS[2] 'paused'
+      KEYS[3] 'meta-paused'
+      KEYS[4] 'id'
+      KEYS[5] 'delayed'
+      KEYS[6] 'priority'
+
+      ARGV[1]  key prefix,
+      ARGV[2]  custom id (will not generate one automatically)
+      ARGV[3]  name
+      ARGV[4]  data (json stringified job data)
+      ARGV[5]  opts (json stringified job opts)
+      ARGV[6]  timestamp
+      ARGV[7]  delay
+      ARGV[8]  delayedTimestamp
+      ARGV[9]  priority
+      ARGV[10] LIFO
+      ARGV[11] token
+]]
+local jobId
+local jobIdKey
+local rcall = redis.call
+
+local jobCounter = rcall("INCR", KEYS[4])
+
+if ARGV[2] == "" then
+  jobId = jobCounter
+  jobIdKey = ARGV[1] .. jobId
+else
+  jobId = ARGV[2]
+  jobIdKey = ARGV[1] .. jobId
+  if rcall("EXISTS", jobIdKey) == 1 then
+    return jobId .. "" -- convert to string
+  end
+end
+
+-- Store the job.
+rcall("HMSET", jobIdKey, "name", ARGV[3], "data", ARGV[4], "opts", ARGV[5], "timestamp", ARGV[6], "delay", ARGV[7], "priority", ARGV[9])
+
+-- Check if job is delayed
+local delayedTimestamp = tonumber(ARGV[8])
+if(delayedTimestamp ~= 0) then
+  local timestamp = delayedTimestamp * 0x1000 + bit.band(jobCounter, 0xfff)
+  rcall("ZADD", KEYS[5], timestamp, jobId)
+  rcall("PUBLISH", KEYS[5], delayedTimestamp)
+else
+  local target
+
+  -- Whe check for the meta-paused key to decide if we are paused or not
+  -- (since an empty list and !EXISTS are not really the same)
+  local paused
+  if rcall("EXISTS", KEYS[3]) ~= 1 then
+    target = KEYS[1]
+    paused = false
+  else
+    target = KEYS[2]
+    paused = true
+  end
+
+  -- Standard or priority add
+  local priority = tonumber(ARGV[9])
+  if priority == 0 then
+      -- LIFO or FIFO
+    rcall(ARGV[10], target, jobId)
+  else
+    -- Priority add
+    rcall("ZADD", KEYS[6], priority, jobId)
+    local count = rcall("ZCOUNT", KEYS[6], 0, priority)
+
+    local len = rcall("LLEN", target)
+    local id = rcall("LINDEX", target, len - (count-1))
+    if id then
+      rcall("LINSERT", target, "BEFORE", id, jobId)
+    else
+      rcall("RPUSH", target, jobId)
+    end
+
+  end
+
+  -- Emit waiting event (wait..ing@token)
+  rcall("PUBLISH", KEYS[1] .. "ing@" .. ARGV[11], jobId)
+end
+
+return jobId .. "" -- convert to string
+
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:77cd4606b498d541f1b188997acfefe7:1704049200000
+$11
+__default__
+$53
+{"id":1,"service":"admin.sys.reqLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:1:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":1},"jobId":"repeat:77cd4606b498d541f1b188997acfefe7:1704049200000","delay":557578245,"timestamp":1703491621755,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491621755
+$9
+557578245
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+163a45c2-1906-41ac-9bbb-def15d9f77fb
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:53195811d8e220355591cc006579b8e1:1704049200000
+$11
+__default__
+$55
+{"id":2,"service":"admin.sys.loginLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:2:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":2},"jobId":"repeat:53195811d8e220355591cc006579b8e1:1704049200000","delay":557578243,"timestamp":1703491621757,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491621757
+$9
+557578243
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+163a45c2-1906-41ac-9bbb-def15d9f77fb
+*4
+$4
+zadd
+$33
+{midway-bull}:SysTaskQueue:repeat
+$13
+1704049200000
+$27
+__default__:3:::0 0 3 ? * 1
+*20
+$7
+evalsha
+$40
+8f55ae4a3be429c6d38c5d5db3e80edf89197b64
+$1
+6
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:paused
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$29
+{midway-bull}:SysTaskQueue:id
+$34
+{midway-bull}:SysTaskQueue:delayed
+$35
+{midway-bull}:SysTaskQueue:priority
+$27
+{midway-bull}:SysTaskQueue:
+$53
+repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000
+$11
+__default__
+$54
+{"id":3,"service":"admin.sys.taskLog.clear","args":""}
+$281
+{"repeat":{"count":1,"key":"__default__:3:::0 0 3 ? * 1","cron":"0 0 3 ? * 1","jobId":3},"jobId":"repeat:0068ebd51ddb03ae50941a0741c5daf7:1704049200000","delay":557578234,"timestamp":1703491621766,"prevMillis":1704049200000,"removeOnComplete":true,"removeOnFail":true,"attempts":1}
+$13
+1703491621766
+$9
+557578234
+$13
+1704049200000
+$1
+0
+$5
+LPUSH
+$36
+163a45c2-1906-41ac-9bbb-def15d9f77fb
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491651739
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491711741
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491741742
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491771743
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491831744
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491861745
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491921746
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703491981748
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492011749
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492041749
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492071750
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492101754
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*2
+$3
+DEL
+$39
+admin:captcha:img:8HMi1KJfFQS9dRM8rEgGT
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492161755
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492191756
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492221758
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492251759
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492281760
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492311762
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492341763
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492371764
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492431766
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492461767
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492491768
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492551760
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492611761
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492641763
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492701763
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492731765
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492761766
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492821768
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492851769
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492911772
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492941773
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703492971778
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703493031779
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703493061780
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703493091781
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+*14
+$7
+evalsha
+$40
+b52af7a3cde0f20cb48835a1b09863b1d5bf05b7
+$1
+7
+$34
+{midway-bull}:SysTaskQueue:stalled
+$31
+{midway-bull}:SysTaskQueue:wait
+$33
+{midway-bull}:SysTaskQueue:active
+$33
+{midway-bull}:SysTaskQueue:failed
+$40
+{midway-bull}:SysTaskQueue:stalled-check
+$38
+{midway-bull}:SysTaskQueue:meta-paused
+$33
+{midway-bull}:SysTaskQueue:paused
+$1
+1
+$27
+{midway-bull}:SysTaskQueue:
+$13
+1703493121783
+$5
+30000
+*2
+$3
+DEL
+$40
+{midway-bull}:SysTaskQueue:stalled-check
