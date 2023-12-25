@@ -1,4 +1,5 @@
 import SysDepartment from './sys/dept/dept.entity';
+import SysReqLog from './sys/log/entity/req_log.entity';
 import SysMenu from './sys/menu/menu.entity';
 import SysRole from './sys/role/entity/role.entity';
 import SysRoleDepartment from './sys/role/entity/role_dept.entity';
@@ -62,4 +63,31 @@ export interface IImageCaptchaOptions {
 export interface IInfoDeptResult {
   department: SysDepartment | undefined;
   parentDepartment: SysDepartment | undefined;
+}
+
+export interface IOnlineInfoListResult {
+  id: number;
+  ip: string;
+  username: string;
+  isCurrent: boolean;
+  time: string;
+  status: number;
+  os: string;
+  browser: string;
+  disable: boolean;
+}
+
+export interface IPageTaskLogResult {
+  id: number;
+  taskId: number;
+  name: string;
+  createTime: string;
+  finishTime: string;
+  detail: string;
+  status: number;
+}
+
+export interface IPageSearchReqLogResult {
+  count: number;
+  logs: SysReqLog[];
 }
