@@ -1,19 +1,36 @@
 import { Length, IsString, IsEmail, ValidateIf, Allow } from 'class-validator';
 import { Expose } from 'class-transformer';
+import { ApiProperty } from '@midwayjs/swagger';
 
 export class LoginInfoDto {
+  @ApiProperty({
+    type: 'string',
+    example: 'admin',
+  })
   @IsString()
   @Expose()
   username: string;
 
+  @ApiProperty({
+    type: 'string',
+    example: 'password123',
+  })
   @IsString()
   @Expose()
   password: string;
 
+  @ApiProperty({
+    type: 'string',
+    example: '1234',
+  })
   @IsString()
   @Expose()
   captchaId: string;
 
+  @ApiProperty({
+    type: 'string',
+    example: '1234',
+  })
   @Length(4)
   @Expose()
   verifyCode: string;

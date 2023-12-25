@@ -14,6 +14,7 @@ import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
 import { ExecptionMiddleware } from './middleware/execption.middleware';
 import { AdminSysTaskService } from './modules/admin/sys/task/task.service';
+import { AdminAuthMiddleware } from './middleware/admin_auth.middleware';
 
 dotenv.config();
 
@@ -44,7 +45,11 @@ export class MainConfiguration {
 
   async onReady() {
     // add middleware
-    this.app.useMiddleware([ReportMiddleware, ExecptionMiddleware]);
+    this.app.useMiddleware([
+      ReportMiddleware,
+      ExecptionMiddleware,
+      AdminAuthMiddleware,
+    ]);
   }
 
   async onServerReady(container: IMidwayContainer) {

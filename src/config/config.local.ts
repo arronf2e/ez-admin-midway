@@ -10,6 +10,10 @@ export default {
   jwt: {
     secret: process.env.JWT_SECRET || 'eam',
   },
+  aesSecret: {
+    admin: process.env.AES_SECRET_ADMIN || 'esmadmin',
+    front: process.env.AES_SECRET_FRONT || 'esmfront',
+  },
   typeorm: {
     dataSource: {
       default: {
