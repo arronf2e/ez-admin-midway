@@ -1,4 +1,4 @@
-import { Config, Provide } from '@midwayjs/core';
+import { Config, Provide, Scope, ScopeEnum } from '@midwayjs/core';
 import { Context } from 'koa';
 import * as CryptoJS from 'crypto-js';
 import * as JsonWebToken from 'jsonwebtoken';
@@ -6,6 +6,7 @@ import { customAlphabet, nanoid } from 'nanoid';
 import ErrorConstants from '../constant/error_constants';
 
 @Provide()
+@Scope(ScopeEnum.Singleton)
 export class Utils {
   @Config('jwt')
   jwt;
