@@ -8,7 +8,7 @@ import SysUserRole from './entity/user_role.entity';
 import { iConfigAesSecret } from '../../../../interface';
 import { Utils } from '../../../../utils';
 import { UpdatePersonInfoDto } from '../../verify';
-import { isEmpty } from 'lodash';
+import { findIndex, isEmpty } from 'lodash';
 import { CreateUserDto, UpdateUserDto } from './user.dto';
 import { IPageSearchUserResult } from '../../interface';
 import { UpdatePasswordDto } from '../../verity.dto';
@@ -245,18 +245,20 @@ export class AdminSysUserService extends BaseService {
   /**
    * 根据部门ID列举用户条数：除去超级管理员
    */
-  async count(uid: number, deptId: number): Promise<number> {
-    if (deptId === -1) {
+  async count(uid: number, deptIds: number[]): Promise<number> {
+    const queryAll: boolean = isEmpty(deptIds);
+    const rootUserId = await this.findRootUserId();
+    if (queryAll) {
       return await this.user.count({
         where: {
-          id: Not(In([this.rootRoleId, uid])),
+          id: Not(In([rootUserId, uid])),
         },
       });
     }
     return await this.user.count({
       where: {
-        id: Not(In([this.rootRoleId, uid])),
-        departmentId: deptId,
+        id: Not(In([rootUserId, uid])),
+        departmentId: In(deptIds),
       },
     });
   }
@@ -267,10 +269,12 @@ export class AdminSysUserService extends BaseService {
    */
   async page(
     uid: number,
-    deptId: number,
+    deptIds: number[],
     page: number,
     count: number
   ): Promise<IPageSearchUserResult[]> {
+    const queryAll: boolean = isEmpty(deptIds);
+    const rootUserId = await this.findRootUserId();
     const result = await this.user
       .createQueryBuilder('user')
       .innerJoinAndSelect(
@@ -278,27 +282,45 @@ export class AdminSysUserService extends BaseService {
         'dept',
         'dept.id = user.departmentId'
       )
-      .where('user.id NOT IN (:...ids)', { ids: [this.rootRoleId, uid] })
-      .andWhere(deptId === -1 ? '1 = 1' : `user.departmentId = '${deptId}'`)
+      .innerJoinAndSelect(
+        'sys_user_role',
+        'user_role',
+        'user_role.user_id = user.id'
+      )
+      .innerJoinAndSelect('sys_role', 'role', 'role.id = user_role.role_id')
+      .where('user.id NOT IN (:...ids)', { ids: [rootUserId, uid] })
+      .andWhere(queryAll ? '1 = 1' : 'user.departmentId IN (:...deptIds)', {
+        deptIds,
+      })
       .offset(page * count)
       .limit(count)
       .getRawMany();
-    const dealResult = result.map(e => {
-      return {
-        createTime: e.user_createTime,
-        departmentId: e.user_department_id,
-        email: e.user_email,
-        headImg: e.user_head_img,
-        id: e.user_id,
-        name: e.user_name,
-        nickName: e.user_nick_name,
-        phone: e.user_phone,
-        remark: e.user_remark,
-        status: e.user_status,
-        updateTime: e.user_updateTime,
-        username: e.user_username,
-        departmentName: e.dept_name,
-      };
+    const dealResult: IPageSearchUserResult[] = [];
+    // 过滤去重
+    result.forEach(e => {
+      const index = findIndex(dealResult, e2 => e2.id === e.user_id);
+      if (index < 0) {
+        // 当前元素不存在则插入
+        dealResult.push({
+          createTime: e.user_createTime,
+          departmentId: e.user_department_id,
+          email: e.user_email,
+          headImg: e.user_head_img,
+          id: e.user_id,
+          name: e.user_name,
+          nickName: e.user_nick_name,
+          phone: e.user_phone,
+          remark: e.user_remark,
+          status: e.user_status,
+          updateTime: e.user_updateTime,
+          username: e.user_username,
+          departmentName: e.dept_name,
+          roleNames: [e.role_name],
+        });
+      } else {
+        // 已存在
+        dealResult[index].roleNames.push(e.role_name);
+      }
     });
     return dealResult;
   }
@@ -329,6 +351,35 @@ export class AdminSysUserService extends BaseService {
       await this.redis.del(ts);
       await this.redis.del(ps);
     }
+  }
+
+  /**
+   * 查找超管的用户ID
+   */
+  async findRootUserId(): Promise<number> {
+    const result = await this.userRole.findOne({
+      where: {
+        id: this.rootRoleId,
+      },
+    });
+    return result.userId;
+  }
+
+  /**
+   * 直接更改管理员密码
+   */
+  async forceUpdatePassword(uid: number, password: string): Promise<void> {
+    const user = await this.user.findOne({
+      where: {
+        id: uid,
+      },
+    });
+    if (isEmpty(user)) {
+      throw new Error('update password user is not exist');
+    }
+    const newPassword = this.utils.md5(`${password}${user.psalt}`);
+    await this.user.update({ id: uid }, { password: newPassword });
+    await this.upgradePasswordV(user.id);
   }
 
   /**

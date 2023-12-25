@@ -6,8 +6,8 @@ import {
   IsString,
   IsBoolean,
   Allow,
-  IsNumberString,
   ValidateIf,
+  IsNumber,
 } from 'class-validator';
 import { Expose } from 'class-transformer';
 
@@ -93,7 +93,7 @@ export class DeleteMenuDto {
  * 查询菜单
  */
 export class InfoMenuDto {
-  @IsNumberString()
+  @IsNumber()
   @Expose()
-  menuId: string;
+  menuId: number;
 }

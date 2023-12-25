@@ -2,7 +2,6 @@ import {
   ArrayNotEmpty,
   ArrayMinSize,
   IsOptional,
-  IsNumberString,
   Length,
   Matches,
   IsInt,
@@ -47,7 +46,8 @@ export class UpdateRoleDto extends CreateRoleDto {
 }
 
 export class InfoRoleDto {
-  @IsNumberString()
+  @IsInt()
   @Expose()
-  roleId: string;
+  @Expose()
+  roleId: number;
 }

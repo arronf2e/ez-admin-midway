@@ -64,6 +64,18 @@ export class AdminSysRoleService extends BaseService {
   }
 
   /**
+   * 列举所有角色条数：除去超级管理员
+   */
+  async count(): Promise<number> {
+    const count = await this.role.count({
+      where: {
+        id: Not(this.rootRoleId),
+      },
+    });
+    return count;
+  }
+
+  /**
    * 根据角色Id数组删除
    */
   async delete(roleIds: number[]): Promise<void> {

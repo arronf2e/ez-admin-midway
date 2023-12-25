@@ -30,3 +30,8 @@ export class PageGetDto {
   @Expose()
   page: number;
 }
+
+export class SearchReqLogDto extends PageGetDto {
+  @Expose()
+  q: string;
+}

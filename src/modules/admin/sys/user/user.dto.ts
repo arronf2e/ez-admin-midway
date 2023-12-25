@@ -8,7 +8,7 @@ import {
   ValidateIf,
   IsOptional,
   IsIn,
-  IsNumberString,
+  IsString,
 } from 'class-validator';
 import { Expose } from 'class-transformer';
 import { PageGetDto } from '../../../share/dto/base.dto';
@@ -63,9 +63,9 @@ export class UpdateUserDto extends CreateUserDto {
 }
 
 export class InfoUserDto {
-  @IsNumberString()
+  @IsInt()
   @Expose()
-  userId: string;
+  userId: number;
 }
 
 export class DeleteUserDto {
@@ -75,7 +75,16 @@ export class DeleteUserDto {
 }
 
 export class QueryUserDto extends PageGetDto {
-  @IsNumberString()
   @Expose()
-  departmentId: string;
+  departmentIds: number[];
+}
+
+export class PasswordUserDto {
+  @IsInt()
+  @Expose()
+  userId: number;
+
+  @IsString()
+  @Expose()
+  password: string;
 }
