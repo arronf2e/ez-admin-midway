@@ -1,4 +1,4 @@
-import { Configuration, App, Inject } from '@midwayjs/core';
+import { Configuration, App, Inject, IMidwayContainer } from '@midwayjs/core';
 import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
@@ -13,6 +13,7 @@ import * as passport from '@midwayjs/passport';
 import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
 import { ExecptionMiddleware } from './middleware/execption.middleware';
+import { AdminSysTaskService } from './modules/admin/sys/task/task.service';
 
 dotenv.config();
 
@@ -46,12 +47,9 @@ export class MainConfiguration {
     this.app.useMiddleware([ReportMiddleware, ExecptionMiddleware]);
   }
 
-  async onServerReady() {
-    // 获取 Processor 相关的队列
-    const testQueue = this.bullFramework.getQueue('SysTask');
-    // 立即执行这个任务
-    await testQueue?.runJob({
-      name: 'hello world',
-    });
+  async onServerReady(container: IMidwayContainer) {
+    // 初始化系统任务
+    const taskService = await container.getAsync(AdminSysTaskService);
+    await taskService.initTask();
   }
 }

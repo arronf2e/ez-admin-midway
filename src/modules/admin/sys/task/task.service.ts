@@ -22,6 +22,7 @@ export class AdminSysTaskService extends BaseService {
    * 初始化任务，系统启动前调用
    */
   async initTask(): Promise<void> {
+    console.log(this.sysTaskQueue, 'this.sysTaskQueue');
     const jobs = await this.sysTaskQueue.getJobs([
       'active',
       'delayed',
