@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@midwayjs/bootstrap": "^3.12.0",
+    "@midwayjs/bull": "3",
     "@midwayjs/core": "^3.12.0",
     "@midwayjs/decorator": "^3.12.0",
     "@midwayjs/info": "^3.12.0",
@@ -21,7 +22,7 @@
     "dotenv": "^16.3.1",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.6.5",
-    "nanoid": "^5.0.4",
+    "nanoid": "^3.3.7",
     "swagger-ui-dist": "^5.10.5",
     "typeorm": "^0.3.17"
   },
