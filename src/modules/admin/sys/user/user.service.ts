@@ -116,7 +116,7 @@ export class AdminSysUserService extends BaseService {
       return false;
     }
     // 所有用户初始密码为123456
-    const dataSource = this.dataSourceManager.getDataSource('default');
+    const dataSource = this.getManager();
     await dataSource.transaction(async manager => {
       const password = this.utils.aesEncrypt('123456', this.aesSecret.admin);
       const u = manager.create(SysUser, {
@@ -148,7 +148,7 @@ export class AdminSysUserService extends BaseService {
    * 更新用户信息
    */
   async update(param: UpdateUserDto): Promise<void> {
-    const dataSource = this.dataSourceManager.getDataSource('default');
+    const dataSource = this.getManager();
     await dataSource.transaction(async manager => {
       await manager.update(SysUser, param.id, {
         departmentId: param.departmentId,

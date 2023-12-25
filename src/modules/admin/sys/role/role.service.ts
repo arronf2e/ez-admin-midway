@@ -70,7 +70,7 @@ export class AdminSysRoleService extends BaseService {
     if (includes(roleIds, this.rootRoleId)) {
       throw new Error('Not Support Delete Root');
     }
-    const dataSource = this.dataSourceManager.getDataSource('default');
+    const dataSource = this.getManager();
     await dataSource.transaction(async manager => {
       await manager.delete(SysRole, roleIds);
       await manager.delete(SysRoleMenu, { roleId: In(roleIds) });
@@ -143,7 +143,7 @@ export class AdminSysRoleService extends BaseService {
     const insertDeptRowIds = difference(depts, originDeptIds);
     const deleteDeptRowIds = difference(originDeptIds, depts);
     // using transaction
-    const dataSource = this.dataSourceManager.getDataSource('default');
+    const dataSource = this.getManager();
     await dataSource.transaction(async manager => {
       // 菜单
       if (insertMenusRowIds.length > 0) {
