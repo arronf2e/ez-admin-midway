@@ -5,7 +5,7 @@ import SysRole from './entity/role.entity';
 import { In, Not, Repository } from 'typeorm';
 import SysRoleMenu from './entity/role_menu.entity';
 import SysRoleDepartment from './entity/role_dept.entity';
-import { IAddRoleResult, IRoleInfoResult } from '../interface';
+import { IAddRoleResult, IRoleInfoResult } from '../../interface';
 import { difference, filter, includes, isEmpty, map } from 'lodash';
 import { CreateRoleDto, UpdateRoleDto } from './role.dto';
 import SysUserRole from '../user/entity/user_role.entity';
@@ -226,7 +226,7 @@ export class AdminSysRoleService extends BaseService {
   /**
    * 根据角色ID列表查找关联用户ID
    */
-  async countUserIdByRole(ids: number[]) {
+  async countUserIdByRole(ids: number[]): Promise<number | never> {
     if (includes(ids, this.rootRoleId)) {
       throw new Error('Not Support Delete Root');
     }

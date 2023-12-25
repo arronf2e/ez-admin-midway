@@ -6,7 +6,7 @@ import SysMenu from './menu.entity';
 import { DeleteResult, IsNull, Not, Repository } from 'typeorm';
 import { CreateMenuDto } from './menu.dto';
 import { concat, includes, isEmpty, uniq } from 'lodash';
-import { IMenuItemAndParentInfoResult } from '../interface';
+import { IMenuItemAndParentInfoResult } from '../../interface';
 
 @Provide()
 export class AdminSysMenuService extends BaseService {

@@ -6,7 +6,7 @@ import { BaseService } from '../../../../share/service/base.service';
 import SysLoginLog from '../entity/login_log.entity';
 import { Context } from '@midwayjs/koa';
 import { Utils } from '../../../../../utils';
-import { ILoginLogResult } from '../../interface';
+import { ILoginLogResult } from '../../../interface';
 
 @Provide()
 export class AdminSysLoginLogService extends BaseService {

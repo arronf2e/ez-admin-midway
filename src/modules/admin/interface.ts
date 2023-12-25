@@ -1,7 +1,8 @@
-import SysMenu from './menu/menu.entity';
-import SysRole from './role/entity/role.entity';
-import SysRoleDepartment from './role/entity/role_dept.entity';
-import SysRoleMenu from './role/entity/role_menu.entity';
+import SysDepartment from './sys/dept/dept.entity';
+import SysMenu from './sys/menu/menu.entity';
+import SysRole from './sys/role/entity/role.entity';
+import SysRoleDepartment from './sys/role/entity/role_dept.entity';
+import SysRoleMenu from './sys/role/entity/role_menu.entity';
 
 export interface IImageCaptchaResult {
   img: string;
@@ -51,4 +52,14 @@ export interface IPageSearchUserResult {
   updateTime: string;
   username: string;
   departmentName: string;
+}
+
+export interface IImageCaptchaOptions {
+  width: number;
+  height: number;
+}
+
+export interface IInfoDeptResult {
+  department: SysDepartment | undefined;
+  parentDepartment: SysDepartment | undefined;
 }
