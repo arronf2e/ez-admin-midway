@@ -3,6 +3,7 @@ import { MidwayConfig } from '@midwayjs/core';
 export default {
   // use for cookie sign key, should change to your own and keep security
   keys: '1703165326687_8082',
+  rootRoleId: 1,
   koa: {
     port: 7001,
   },
@@ -45,6 +46,7 @@ export default {
       redis: `redis://${process.env.REDIS_HOST || '127.0.0.1'}:${
         process.env.REDIS_PORT || 6379
       }`,
+      prefix: 'admin:task',
     },
   },
   bullBoard: {

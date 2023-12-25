@@ -90,10 +90,6 @@ export class AdminVerifyService extends BaseService {
       username,
       this.aesSecret.front
     );
-    const decodePassword = this.utils.aesDecrypt(
-      password,
-      this.aesSecret.front
-    );
     const user = await this.user.findOne({
       where: {
         username: decodeUserName,
