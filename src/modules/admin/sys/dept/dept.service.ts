@@ -7,7 +7,7 @@ import { AdminSysRoleService } from '../role/role.service';
 import SysUser from '../user/entity/user.entity';
 import SysDepartment from './dept.entity';
 import { IInfoDeptResult } from '../../interface';
-import { UpdateDeptDto } from './dept.dto';
+import { MoveDept, UpdateDeptDto } from './dept.dto';
 import { includes } from 'lodash';
 
 @Provide()
@@ -88,6 +88,17 @@ export class AdminSysDeptService extends BaseService {
   }
 
   /**
+   * 查找当前部门下的子部门数量
+   */
+  async countChildDept(id: number): Promise<number> {
+    return await this.dept.count({
+      where: {
+        parentId: id,
+      },
+    });
+  }
+
+  /**
    * 根据部门查询关联的用户数量
    */
   async countUserByDeptId(id: number): Promise<number> {
@@ -132,5 +143,20 @@ export class AdminSysDeptService extends BaseService {
         .getMany();
     }
     return depts;
+  }
+
+  /**
+   * 移动排序
+   */
+  async move(depts: MoveDept[]): Promise<void> {
+    await this.getManager().transaction(async manager => {
+      for (let i = 0; i < depts.length; i++) {
+        await manager.update(
+          SysDepartment,
+          { id: depts[i].id },
+          { parentId: depts[i].parentId }
+        );
+      }
+    });
   }
 }

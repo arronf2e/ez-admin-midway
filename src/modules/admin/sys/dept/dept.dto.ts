@@ -11,11 +11,11 @@ import { Expose } from 'class-transformer';
 export class CreateDeptDto {
   @IsString()
   @Expose()
-  departmentName: string;
+  name: string;
 
   @IsInt()
   @Expose()
-  parentDepartmentId: number;
+  parentId: number;
 
   @IsOptional()
   @IsInt()
@@ -53,7 +53,7 @@ export class DeleteDeptDto {
 export class InfoDeptDto {
   @IsNumberString()
   @Expose()
-  departmentId: string;
+  departmentId: number;
 }
 
 export class TransferDeptDto {
@@ -64,4 +64,15 @@ export class TransferDeptDto {
   @IsInt()
   @Expose()
   departmentId: number;
+}
+
+export class MoveDeptDto {
+  @ArrayNotEmpty()
+  @Expose()
+  depts: MoveDept[];
+}
+
+export interface MoveDept {
+  id: number;
+  parentId: number | null;
 }
