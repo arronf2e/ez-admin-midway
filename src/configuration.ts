@@ -7,6 +7,7 @@ import * as dotenv from 'dotenv';
 import * as orm from '@midwayjs/typeorm';
 import * as redis from '@midwayjs/redis';
 import * as bull from '@midwayjs/bull';
+import * as bullBoard from '@midwayjs/bull-board';
 import { join } from 'path';
 import { ReportMiddleware } from './middleware/report.middleware';
 import { ExecptionMiddleware } from './middleware/execption.middleware';
@@ -21,6 +22,7 @@ dotenv.config();
     orm,
     redis,
     bull,
+    bullBoard,
     {
       component: info,
       enabledEnvironment: ['local'],
@@ -42,7 +44,7 @@ export class MainConfiguration {
 
   async onServerReady() {
     // 获取 Processor 相关的队列
-    const testQueue = this.bullFramework.getQueue('test');
+    const testQueue = this.bullFramework.getQueue('SysTask');
     // 立即执行这个任务
     await testQueue?.runJob({
       name: 'hello world',

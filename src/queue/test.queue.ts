@@ -1,6 +1,6 @@
 import { Processor, IProcessor } from '@midwayjs/bull';
 
-@Processor('test')
+@Processor('SysTask')
 export class TestProcessor implements IProcessor {
   async execute(params) {
     // ...

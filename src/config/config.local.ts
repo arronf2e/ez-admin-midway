@@ -44,6 +44,9 @@ export default {
       }`,
     },
   },
+  bullBoard: {
+    basePath: '/bullBoard',
+  },
   swagger: {
     title: 'ez-admin-midway',
     description: 'ez-admin for midwayjs api',

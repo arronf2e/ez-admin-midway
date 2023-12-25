@@ -11,6 +11,9 @@ dependencies:
   '@midwayjs/bull':
     specifier: '3'
     version: 3.13.8
+  '@midwayjs/bull-board':
+    specifier: '3'
+    version: 3.13.8
   '@midwayjs/core':
     specifier: ^3.12.0
     version: 3.13.7
@@ -458,6 +461,21 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
+  /@bull-board/api@5.10.2(@bull-board/ui@5.10.2):
+    resolution: {integrity: sha512-Gx98cqN0cryJB35mVKjYsEnD3NxArWY3Xi2E5Wrr17QTVOzWEP4jyDQ/riiapVdnYqc9RSsxCCmdIaNdNPcXlQ==}
+    peerDependencies:
+      '@bull-board/ui': 5.10.2
+    dependencies:
+      '@bull-board/ui': 5.10.2
+      redis-info: 3.1.0
+    dev: false
+
+  /@bull-board/ui@5.10.2:
+    resolution: {integrity: sha512-wU9XmrX/COISZ3+sn3VEDB1UtPt7szu4QSKTw1O0q+U1JLM4Kxfs3tH9ZAIulzMrY+CQtkJXd+dKZPuRqy4rfQ==}
+    dependencies:
+      '@bull-board/api': 5.10.2(@bull-board/ui@5.10.2)
+    dev: false
+
   /@colors/colors@1.6.0:
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
     engines: {node: '>=0.1.90'}
@@ -829,6 +847,18 @@ packages:
     dependencies:
       '@midwayjs/async-hooks-context-manager': 3.13.7
       '@midwayjs/event-bus': 1.9.4
+    dev: false
+
+  /@midwayjs/bull-board@3.13.8:
+    resolution: {integrity: sha512-HToiEXK0pUd4IBAo161cdxPtCWBkMJcAlWpOIICsxVtSyM1lQKYu5jUxJXqpNcKsXaKPWkvmv7DKFNOTZyZKdQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@bull-board/api': 5.10.2(@bull-board/ui@5.10.2)
+      '@bull-board/ui': 5.10.2
+      '@midwayjs/bull': 3.13.8
+      ejs: 3.1.9
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@midwayjs/bull@3.13.8:
@@ -1899,7 +1929,6 @@ packages:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
-    dev: true
 
   /brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
@@ -2224,7 +2253,6 @@ packages:
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-    dev: true
 
   /configstore@5.0.1:
     resolution: {integrity: sha512-aMKprgk5YhBNyH25hj8wGt2+D52Sw1DRRIzqBwLp2Ya9mFmY8KPvvtvmna8SxVR9JMZ4kzMD68N22vlaRpkeFA==}
@@ -2509,7 +2537,6 @@ packages:
     hasBin: true
     dependencies:
       jake: 10.8.7
-    dev: true
 
   /electron-to-chromium@1.4.615:
     resolution: {integrity: sha512-/bKPPcgZVUziECqDc+0HkT87+0zhaWSZHNXqF8FLd2lQcptpmUFwoCSWjCdOng9Gdq+afKArPdEg/0ZW461Eng==}
@@ -2858,7 +2885,6 @@ packages:
     resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
     dependencies:
       minimatch: 5.1.6
-    dev: true
 
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
@@ -3505,7 +3531,6 @@ packages:
       chalk: 4.1.2
       filelist: 1.0.4
       minimatch: 3.1.2
-    dev: true
 
   /jest-changed-files@29.7.0:
     resolution: {integrity: sha512-fEArFiwf1BpQ+4bXSprcDc3/x4HSzL4al2tozwVpDFpsxALjLYdyiIK4e5Vz66GQJIbXJ82+35PtysofptNX2w==}
@@ -4378,7 +4403,6 @@ packages:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
-    dev: true
 
   /minimatch@5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
@@ -4930,6 +4954,12 @@ packages:
   /redis-errors@1.2.0:
     resolution: {integrity: sha512-1qny3OExCf0UvUV/5wpYKf2YwPcOqXzkwKKSmKHiE6ZMQs5heeE/c8eXK+PNllPvmjgAbfnsbpkGZWy8cBpn9w==}
     engines: {node: '>=4'}
+    dev: false
+
+  /redis-info@3.1.0:
+    resolution: {integrity: sha512-ER4L9Sh/vm63DkIE0bkSjxluQlioBiBgf5w1UuldaW/3vPcecdljVDisZhmnCMvsxHNiARTTDDHGg9cGwTfrKg==}
+    dependencies:
+      lodash: 4.17.21
     dev: false
 
   /redis-parser@3.0.0:

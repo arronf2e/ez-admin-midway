@@ -6,6 +6,7 @@
   "dependencies": {
     "@midwayjs/bootstrap": "^3.12.0",
     "@midwayjs/bull": "3",
+    "@midwayjs/bull-board": "3",
     "@midwayjs/core": "^3.12.0",
     "@midwayjs/decorator": "^3.12.0",
     "@midwayjs/info": "^3.12.0",
