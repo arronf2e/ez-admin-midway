@@ -2,7 +2,6 @@
   "name": "ez-admin-midway",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "dependencies": {
     "@midwayjs/bootstrap": "^3.12.0",
     "@midwayjs/bull": "3",
